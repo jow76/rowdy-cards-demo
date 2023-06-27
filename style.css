@@ -70,7 +70,7 @@ div p{
     user-select: none;
 }
 
-div:hover{
+#mainbutton:hover{
     cursor:pointer;
 }
 
