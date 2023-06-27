@@ -19,6 +19,12 @@ h1{
     margin: 2rem;
 }
 
+h3{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
 .logo{
     max-width: 100px;
     max-height: 100px;
@@ -64,6 +70,10 @@ div p{
     user-select: none;
 }
 
+div:hover{
+    cursor:pointer;
+}
+
 footer{
     background-color: black;
     color: darkgreen;
@@ -84,4 +94,14 @@ section img{
     width: 50vb;
     max-width: 1200px;
     border-radius: 5%;
+}
+
+#drawn{
+    font-size: 2rem;
+    border-radius: 0%;
+}
+
+#graveyardCount{
+    font-size: 2rem;
+    border-radius: 0%;
 }

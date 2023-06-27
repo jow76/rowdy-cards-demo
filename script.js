@@ -3,6 +3,7 @@ const cardNums = ["001","002","003","004","005","006","007","008","009","010","0
 const allCards = []
 const image1 = document.querySelector("section img:first-child")
 const graveyard = []
+countCards();
 
 function Card(number, src){
     this.number = number;
@@ -26,6 +27,7 @@ function handleClick(event){
             image1.src = allCards[card].src;
             image1.alt = allCards[card].number;
             graveyard.push(card)
+            countCards();
         }
     }
     else{}
@@ -42,3 +44,10 @@ function generateDeck(){
 }
 
 cardContainer.addEventListener("click",handleClick)
+
+function countCards(){
+    const p = document.getElementById("graveyardCount")
+    const div = document.getElementById("discarded")
+    p.textContent=graveyard.length;
+    div.appendChild(p);
+}
