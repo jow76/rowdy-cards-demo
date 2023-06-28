@@ -5,6 +5,7 @@ const cardNums = ["001","002","003","004","005","006","007","008","009","010","0
 const allCards = []
 const image1 = document.querySelector("section img:first-child")
 const graveyard = []
+const drawn = []
 let prev = graveyard.length
 let backCount = 1;
 countCards();
@@ -26,12 +27,12 @@ generateDeck()
 function handleClick(event){
     // if(event.target===cardContainer){
         let card = randNum()
-        if(graveyard.length === allCards.length){
+        if(drawn.length === allCards.length){
             image1.src = ""
             image1.alt = "Out of cards! Refresh to keep playing!"
         }
         else{
-            while(graveyard.includes(card)){
+            while(drawn.includes(card)){
                 card = randNum()
             }
             image1.src = allCards[card].src;
@@ -39,6 +40,7 @@ function handleClick(event){
             new DeadCard(image1.alt, image1.src)
             countCards();
             backCount=1;
+            drawn.push(card)
         }
     // }
     // else{}
