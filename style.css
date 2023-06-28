@@ -58,7 +58,6 @@ div{
     max-width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
 }
 
 div p{
@@ -154,7 +153,7 @@ section img:hover{
 
 #rules h3{
     justify-content: left;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
 }
 
 #rules h4{
@@ -171,4 +170,20 @@ section img:hover{
     color:black;
     font-size: 1.1rem;
     user-select: text;
+}
+
+#xyz{
+    display: block;
+    text-align: right;
+    padding-right: 10rem;
+    margin: 0;
+}
+
+#xyz p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
 }
