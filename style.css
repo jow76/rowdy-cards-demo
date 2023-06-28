@@ -139,12 +139,12 @@ section img:hover{
 #rules{
     display: inline;
     text-align: left;
-    max-width: 100vb;
+    width: 100vb;
 }
 
 #rules div{
     display: block;
-    
+    max-width: 600px;
 }
 
 #rules h3{
