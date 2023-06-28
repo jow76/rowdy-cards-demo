@@ -124,10 +124,16 @@ section img:hover{
     border-radius: 5%;
 }
 
-#prevButton{
+#navButtons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#prevButton, #nextButton{
     font-size: 1.5rem;
-    margin: 0;
+    margin: 0 1rem;
     cursor: pointer;
+    justify-content: space-between;
 }
 
 #rules{
