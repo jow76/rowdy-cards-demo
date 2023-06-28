@@ -17,6 +17,7 @@ h1{
     font-weight: 500;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 2rem;
+    user-select: none;
 }
 
 h3{
