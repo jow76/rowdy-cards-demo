@@ -150,6 +150,7 @@ section img:hover{
 #rules div{
     display: block;
     max-width: 600px;
+    margin-bottom: 0;
 }
 
 #rules h3{
