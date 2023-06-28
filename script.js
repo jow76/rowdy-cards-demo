@@ -53,4 +53,4 @@ function countCards(){
     div.appendChild(p);
 }
 
-prevContainer.addEventListener("click",displayPrevious)
+// prevContainer.addEventListener("click",displayPrevious)
