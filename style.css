@@ -140,6 +140,11 @@ section img:hover{
     
 }
 
+#rules h3{
+    justify-content: left;
+    margin: 0 1rem;
+}
+
 #rules h4{
     margin: 0 1rem;
     font-size: 1.5rem;
