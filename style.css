@@ -128,7 +128,6 @@ section img{
 #rules{
     display: inline;
     text-align: left;
-    background-color: rgb(0, 54, 0);
     max-width: 100vb;
 }
 
@@ -149,5 +148,6 @@ section img{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: transparent;
     color:black;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    user-select: text;
 }
