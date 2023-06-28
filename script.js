@@ -64,11 +64,17 @@ function countCards(){
 }
 
 function displayPrevious(){
-    backCount +=1;
-    let i = graveyard.length;
-    i-=backCount;
-    image1.src=graveyard[i].src;
-    image1.alt=graveyard[i].number;
+    if(backCount === graveyard.length){
+        alert("No more previous cards!")
+    }
+    else{
+        backCount +=1;
+        let i = graveyard.length;
+        i-=backCount;
+        image1.src=graveyard[i].src;
+        image1.alt=graveyard[i].number;
+    }
+
 }
 
 prevContainer.addEventListener("click",displayPrevious)
