@@ -6,7 +6,6 @@ const allCards = []
 const image1 = document.querySelector("section img:first-child")
 const graveyard = []
 let prev = graveyard.length
-let backCount = 1;
 countCards();
 
 function Card(number, src){
@@ -38,7 +37,6 @@ function handleClick(event){
             image1.alt = allCards[card].number;
             new DeadCard(image1.alt, image1.src)
             countCards();
-            backCount=1;
         }
     // }
     // else{}
@@ -64,9 +62,8 @@ function countCards(){
 }
 
 function displayPrevious(){
-    backCount +=1;
     let i = graveyard.length;
-    i-=backCount;
+    i-=2;
     image1.src=graveyard[i].src;
     image1.alt=graveyard[i].number;
 }
@@ -75,8 +72,7 @@ prevContainer.addEventListener("click",displayPrevious)
 
 function displayNext(){
     let i = graveyard.length;
-    backCount-=1;
-    i-=backCount;
+    i--;
     if (graveyard[i]===undefined){
         handleClick(event)
     }
